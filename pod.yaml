@@ -20,7 +20,7 @@ spec:
 
     - name: mysql-app
       image: tomcat:latest
-      ports:
+      port
        - containerPort: 3306
     
       env:
