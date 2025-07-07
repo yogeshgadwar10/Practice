@@ -6,8 +6,8 @@ metadata:
     app: cloth-app
 spec:
   ports:
-   - targetPort: 3306
-     port: 3306
+   - targetPort: 8080
+     port: 8080
      protocol: TCP
      name: http
 
