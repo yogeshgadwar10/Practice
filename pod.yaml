@@ -3,7 +3,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: my-pod
-  lables:
+  labels:
      app: my-cloth-service 
 spec:
   containers:
