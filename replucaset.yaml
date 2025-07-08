@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+   name: my-rs
+   labels:
+     app: replicset-app
+spec:
+  template:
+    metadata:
+     labels:
+        app: replicset-app
+
+  spec:
+    containers:
+     - name: httpd-app
+       image: httpd
+       ports:
+        - containerPort: 80
+  
+  replicas: 5
+  selector:
+     matchlabels:
+        name: app: replicset-app
+            
+---
+apiVersion: v1
+kind: service
+metadata:
+   name: my-rs
+   labels:
+    app: 
+spec:
+  port:
+    - targetPort: 80
+      port: 80
+      protocol: TCP
+      name: httpd
+
+
+  selector:
+     app: my-ReplicaSet
+  type: NodePort        
