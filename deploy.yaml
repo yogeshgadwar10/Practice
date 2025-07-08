@@ -24,7 +24,7 @@ spec:
      #- {key: app, operator: In, value: [my-ReplicaSet]}
      - key: app
        operator: In
-       values: [my-ReplicaSet]  
+       values: [my-demo]  
 
   strategy:
     type: RollingUpdate    
