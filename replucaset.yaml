@@ -23,7 +23,7 @@ spec:
     matchExpressions:
      #- {key: app, operator: In, value: [my-ReplicaSet]}
      - key: app
-       operator: NotIn
+       operator: In
        values: [my-ReplicaSet]      
 ---
 apiVersion: v1
