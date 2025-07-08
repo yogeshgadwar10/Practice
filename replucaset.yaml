@@ -12,8 +12,8 @@ spec:
 
     spec:
       containers:
-       - name: httpd-app
-         image: httpd
+       - name: apache2-app
+         image: apache2
          ports:
          - containerPort: 80
   
