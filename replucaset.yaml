@@ -20,12 +20,14 @@ spec:
   replicas: 5
   selector:
      #matchlabels:
-  matchExpressions:
-    - {key: app, operator: In, value: [my-ReplicaSet]}
-            
+    matchExpressions:
+     #- {key: app, operator: In, value: [my-ReplicaSet]}
+     - key: app
+       operator: In
+       values: [my-ReplicaSet]      
 ---
 apiVersion: v1
-kind: service
+kind: Service           
 metadata:
    name: my-rs
    labels:
