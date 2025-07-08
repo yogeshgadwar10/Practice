@@ -34,11 +34,11 @@ metadata:
     app: my-ReplicaSet
 
 spec:
-  port:
-    - targetPort: 80
-      port: 80
-      protocol: TCP
-      name: httpd
+  ports:
+  - targetPort: 80
+    port: 80
+    protocol: TCP
+    name: httpd
 
 
   selector:
