@@ -7,15 +7,15 @@ metadata:
 spec:
   template:
     metadata:
-     labels:
+      labels:
         app: my-ReplicaSet
 
-  spec:
-    containers:
-     - name: httpd-app
-       image: httpd
-       ports:
-        - containerPort: 80
+    spec:
+      containers:
+       - name: httpd-app
+         image: httpd
+         ports:
+         - containerPort: 80
   
   replicas: 5
   selector:
