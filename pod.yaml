@@ -8,8 +8,8 @@ metadata:
 spec:
   containers:
       
-    - name: apache2-app
-      image: apache2
+    - name: nginx-app
+      image: nginx
       ports:
        - containerPort: 80
 
