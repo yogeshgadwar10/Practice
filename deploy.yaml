@@ -26,7 +26,8 @@ spec:
        operator: In
        values: [my-ReplicaSet]  
 
-  strategyType: RollingUpdate    
+  strategy:
+    type: RollingUpdate    
 ---
 apiVersion: v1
 kind: Service           
