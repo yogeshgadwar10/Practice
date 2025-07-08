@@ -28,7 +28,8 @@ kind: service
 metadata:
    name: my-rs
    labels:
-    app: 
+    app: replicset-app
+
 spec:
   port:
     - targetPort: 80
