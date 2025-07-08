@@ -19,7 +19,8 @@ spec:
   
   replicas: 5
   selector:
-     matchlabels:
+     #matchlabels:
+     matchExpressions:
        - {key: app, operator: In, value: [my-ReplicaSet]}
             
 ---
