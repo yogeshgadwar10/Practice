@@ -22,3 +22,21 @@ spec:
   selector:
     app: my-app
 
+---------
+apiVersion: v1
+kind: Service
+metadata: 
+  name: cloth-service
+  labels:
+    app: cloth-app
+spec:
+  ports:
+   - targetPort: 80
+     port: 80
+     protocol: TCP
+     name: http
+
+  selector:
+    app: my-cloth-service
+  type: NodePort
+
