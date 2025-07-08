@@ -20,7 +20,7 @@ spec:
 
   replicas: 3
   selector:
-    app: my-rc
+    app: rc-app
 
 ---
 apiVersion: v1
